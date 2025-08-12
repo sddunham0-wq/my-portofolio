@@ -4,10 +4,20 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full bg-white shadow-md z-50 px-4 py-4 md:px-6 md:py-4">
-      <div className="flex justify-between items-center max-w-6xl mx-auto">
-        <h1 className="text-2xl font-bold text-blue-600">MyPortfolio</h1>
-
+    <nav className="fixed w-full bg-white shadow-md z-50 py-4 px-4 md:px-6">
+      {" "}
+      {/* Padding vertikal (py) tetap */}
+      <div className="flex justify-between items-center max-w-6xl mx-auto h-12">
+        {" "}
+        {/* Tetapkan tinggi navbar (h-12) */}
+        {/* Logo */}
+        <div className="flex items-center">
+          <img
+            src="/logosid.png"
+            alt="Logo MyPortfolio"
+            className="max-h-12 md:max-h-20 w-auto" // Logo membesar, tapi tidak melebihi max-h
+          />
+        </div>
         {/* Hamburger Menu Button (Mobile) */}
         <button
           className="md:hidden text-blue-600"
@@ -36,7 +46,6 @@ export default function Navbar() {
             )}
           </svg>
         </button>
-
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6">
           <li>
@@ -60,7 +69,6 @@ export default function Navbar() {
             </a>
           </li>
         </ul>
-
         {/* Mobile Menu (Conditional Rendering) */}
         {isMenuOpen && (
           <div className="md:hidden absolute top-16 left-0 right-0 bg-white shadow-md py-4 px-6">
