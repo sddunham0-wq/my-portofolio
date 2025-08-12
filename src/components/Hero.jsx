@@ -26,7 +26,7 @@ export default function Hero() {
       </motion.p>
 
       <motion.img
-        src="/bradpitt.jpg"
+        src="/Brad Pitt.jpg"
         alt="Profile"
         className="rounded-full shadow-lg w-48 h-48 object-cover mx-auto md:mx-0 border-4 border-yellow-500"
         initial={{ opacity: 0, y: -50 }}
