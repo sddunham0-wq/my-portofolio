@@ -13,7 +13,7 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        Hi, I'm <span className="text-blue-600">Alfi</span>
+        Hi, I'm <span className="text-blue-600">SID</span>
       </motion.h1>
       <motion.p
         className="text-lg text-gray-600 max-w-xl"
